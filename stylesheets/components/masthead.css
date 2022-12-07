@@ -12,6 +12,7 @@
     grid-area: menu-and-search;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 .masthead__technologies {
     grid-area: technologies;
@@ -38,4 +39,13 @@
     grid-area: paper;
     display: flex;
     justify-content: flex-end;
+}
+
+.masthead__menu-and-search_icon {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.masthead__menu-and-search_icon--hover:hover {
+    background-color: hsla(0, 2%, 87%, 0.5);
 }
