@@ -1,51 +1,78 @@
 /* Your code here */
 .masthead {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
     "menu-and-search . actions"
-    "technologies technologies technologies" 
+    "technologies technologies technologies"
     "date logo paper";
 }
 
 .masthead__menu-and-search {
-    grid-area: menu-and-search;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  grid-area: menu-and-search;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
 }
-.masthead__technologies {
-    grid-area: technologies;
-    display: flex;
-    justify-content: center;
-}
+
 .masthead__actions {
-    grid-area: actions;
-    display: flex;
-    justify-content: flex-end;
+  grid-area: actions;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.masthead__actions > div  {
+    padding-left: 7px;
+}
+
+.masthead__technologies {
+  grid-area: technologies;
+  display: flex;
+  justify-content: center;
+}
+
+.masthead__technologies_span {
+  padding: 0 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.masthead__technologies_a {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: hsl(0, 3%, 12%);
+  margin: 0 5px;
+  line-height: 11px;
 }
 .masthead__date {
-    grid-area: date;
-    display: flex;
-    justify-content: flex-start;
+  grid-area: date;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .masthead__logo {
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50px;
+  width: 100%;
 }
 .masthead__paper {
-    grid-area: paper;
-    display: flex;
-    justify-content: flex-end;
+  grid-area: paper;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .masthead__menu-and-search_icon {
-    font-size: 11px;
-    padding: 7px 9px;
+  font-size: 11px;
+  padding: 7px 9px;
 }
 
 .masthead__menu-and-search_icon--hover:hover {
-    background-color: hsla(0, 2%, 87%, 0.5);
+  background-color: hsla(0, 2%, 87%, 0.5);
 }
