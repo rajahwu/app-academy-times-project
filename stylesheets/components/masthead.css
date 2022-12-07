@@ -1,0 +1,41 @@
+/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "menu-and-search . actions"
+    "technologies technologies technologies" 
+    "date logo paper";
+}
+
+.masthead__menu-and-search {
+    grid-area: menu-and-search;
+    display: flex;
+    justify-content: flex-start;
+}
+.masthead__technologies {
+    grid-area: technologies;
+    display: flex;
+    justify-content: center;
+}
+.masthead__actions {
+    grid-area: actions;
+    display: flex;
+    justify-content: flex-end;
+}
+.masthead__date {
+    grid-area: date;
+    display: flex;
+    justify-content: flex-start;
+}
+.masthead__logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.masthead__paper {
+    grid-area: paper;
+    display: flex;
+    justify-content: flex-end;
+}
