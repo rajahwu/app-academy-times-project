@@ -3,3 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
 }
+
+.imterests-bar__image {
+    height: 100px;
+    width: 100px;
+}
