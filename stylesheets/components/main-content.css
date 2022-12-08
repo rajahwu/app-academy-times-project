@@ -130,6 +130,21 @@ background-color: var(--bg-color);
   border: 1px solid white;
 }
 
+.sidebar__article-list-item:hover{
+    background-color: yellow;
+    color: var(--main-color);
+    border: 1px solid black;
+    box-shadow: 5px 5px hsla(0, 0%, 8%, 0.8);
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
 .sidebar__article-comments {
     color: yellow;
+}
+
+@media screen and (max-width: 1200px) {
+    .right {
+        display: none;
+    }    
 }

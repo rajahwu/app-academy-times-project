@@ -53,4 +53,10 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 1000px) {
+    .interests-bar {
+        display: none;
+    }
+}
+
 
