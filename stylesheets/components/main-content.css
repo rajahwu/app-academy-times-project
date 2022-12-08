@@ -1,7 +1,22 @@
 /* Your code here */
+/* main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "left right";
+    
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+} */
+
 .main {
     display: grid;
-    grid-template-columns: 1.5fr 3fr;
+    grid-template-columns: 2fr 3fr;
     grid-template-areas: 
     "title title"
     "content video";
@@ -47,5 +62,35 @@
 
 
 .main__video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: video;
+}
+
+.article {
+    display: flex;
+}
+
+.right {
+    position: absolute;
+    top: 30vh;
+    right: 0;
+    display: flex;
+    max-width:250px;
+}
+
+.sidebar {
+    width: 25rem;
+    /* background-color: red; */
+  
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    
+}
+
+.sidebar:hover {
+    opacity: 1;
 }
