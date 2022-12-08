@@ -2,9 +2,55 @@
 .interests-bar {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    height: 100px;
+    justify-items: center;
+    align-items: flex-start;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 11px;
 }
 
-.imterests-bar__image {
-    height: 100px;
-    width: 100px;
+.interests-bar__image {
+    display: flex;
+    align-self: center;
+    height: 70px;
+    width: 70px;
 }
+
+.interests-bar__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px;
+    line-height: 1.1rem;
+}
+
+.interests-bar__headline {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.interests-bar__table {
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+}
+
+.interests-bar__big-text {
+    padding-right: 75px;
+}
+
+.interests-bar__price {
+    font-weight: 900;
+    color: hsla(120, 75%, 43%, 0.801);
+}
+
+.interests-bar__temp {
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+}
+
+
